@@ -1,0 +1,67 @@
+GitHub Pages 最终部署检查报告
+生成时间: 2026-06-07 17:52:48 CST
+
+一、路径
+GitHub 本地仓库: /Users/xq/Desktop/resume-portfolio
+部署源文件夹: /Users/xq/Documents/Codex/2026-06-04/new-chat/resume-site-deploy
+
+二、同步内容
+已将 resume-site-deploy/ 内部内容同步到 GitHub 仓库根目录。
+index.html: OK
+works.html: OK
+detail.html: OK
+works-data.js: OK
+assets-data.js: OK
+public/: OK
+assets/: OK
+public/images/hero-photo-new.png: OK
+public/images/contact-qr.png: OK
+
+三、资源路径修复
+已在 .html / .css / .js 中执行:
+- /public/ -> public/
+- /assets/ -> assets/
+首页背景路径应为: public/images/hero-photo-new.png
+二维码路径应为: public/images/contact-qr.png
+视频路径应为: assets/portfolio/...mp4
+
+四、本地路径和 GitHub Pages 风险路径残留
+未发现 127.0.0.1、localhost、file://、/Users/xq、Desktop、Downloads、/public/、/assets/ 风险路径残留。
+
+五、.mov 引用检查
+未发现代码中的 .mov 引用。
+仓库内 .mov 文件数量: 0
+仓库内 .mp4 文件数量: 4
+仓库内 .DS_Store 数量: 0
+
+六、关键路径命中
+首页背景相关:
+/Users/xq/Desktop/resume-portfolio/styles.css:1024:    url("public/images/hero-photo-new.png") center right / cover no-repeat;
+/Users/xq/Desktop/resume-portfolio/styles.css:1975:      url("public/images/hero-photo-new.png") center right / cover no-repeat;
+
+二维码相关:
+/Users/xq/Desktop/resume-portfolio/index.html:193:            <img src="public/images/contact-qr.png" alt="联系二维码" />
+
+视频 mp4 相关节选:
+/Users/xq/Desktop/resume-portfolio/index.html:91:          data-video-src="assets/portfolio/06_横版短片_Video/06_横版短片_凌晨三点的电话EP.01_成片.mp4"
+/Users/xq/Desktop/resume-portfolio/index.html:107:          data-video-src="assets/portfolio/06_横版短片_Video/06_横版短片_凌晨三点的电话EP.02_成片.mp4"
+/Users/xq/Desktop/resume-portfolio/assets-data.js:314:          "video": "assets/portfolio/00_重点作品_Important/06_横版短片_凌晨三点的电话EP.01_成片.mp4",
+/Users/xq/Desktop/resume-portfolio/assets-data.js:318:              "name": "06_横版短片_凌晨三点的电话EP.01_成片.mp4",
+/Users/xq/Desktop/resume-portfolio/assets-data.js:319:              "path": "assets/portfolio/00_重点作品_Important/06_横版短片_凌晨三点的电话EP.01_成片.mp4",
+/Users/xq/Desktop/resume-portfolio/assets-data.js:320:              "ext": ".mp4",
+/Users/xq/Desktop/resume-portfolio/assets-data.js:345:          "video": "assets/portfolio/00_重点作品_Important/06_横版短片_凌晨三点的电话EP.02_成片.mp4",
+/Users/xq/Desktop/resume-portfolio/assets-data.js:349:              "name": "06_横版短片_凌晨三点的电话EP.02_成片.mp4",
+/Users/xq/Desktop/resume-portfolio/assets-data.js:350:              "path": "assets/portfolio/00_重点作品_Important/06_横版短片_凌晨三点的电话EP.02_成片.mp4",
+/Users/xq/Desktop/resume-portfolio/assets-data.js:351:              "ext": ".mp4",
+/Users/xq/Desktop/resume-portfolio/assets-data.js:2652:          "video": "assets/portfolio/06_横版短片_Video/06_横版短片_凌晨三点的电话EP.01_成片.mp4",
+/Users/xq/Desktop/resume-portfolio/assets-data.js:2656:              "name": "06_横版短片_凌晨三点的电话EP.01_成片.mp4",
+/Users/xq/Desktop/resume-portfolio/assets-data.js:2657:              "path": "assets/portfolio/06_横版短片_Video/06_横版短片_凌晨三点的电话EP.01_成片.mp4",
+/Users/xq/Desktop/resume-portfolio/assets-data.js:2658:              "ext": ".mp4",
+/Users/xq/Desktop/resume-portfolio/assets-data.js:2683:          "video": "assets/portfolio/06_横版短片_Video/06_横版短片_凌晨三点的电话EP.02_成片.mp4",
+/Users/xq/Desktop/resume-portfolio/assets-data.js:2687:              "name": "06_横版短片_凌晨三点的电话EP.02_成片.mp4",
+/Users/xq/Desktop/resume-portfolio/assets-data.js:2688:              "path": "assets/portfolio/06_横版短片_Video/06_横版短片_凌晨三点的电话EP.02_成片.mp4",
+/Users/xq/Desktop/resume-portfolio/assets-data.js:2689:              "ext": ".mp4",
+
+七、结论
+如果以上风险路径为空、.mov 引用为空、index.html/public/assets 均为 OK，则可以提交 GitHub。
+部署后访问: https://xqqqhub.github.io/resume-portfolio/
