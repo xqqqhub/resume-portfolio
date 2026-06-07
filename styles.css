@@ -1021,7 +1021,7 @@ video {
 #home-hero {
   background:
     linear-gradient(90deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.72) 34%, rgba(0, 0, 0, 0.34) 68%, rgba(0, 0, 0, 0.08) 100%),
-    url("/public/images/hero-photo-new.png") center right / cover no-repeat;
+    url("public/images/hero-photo-new.png") center right / cover no-repeat;
 }
 
 .pdf-page-hero::after {
@@ -1972,7 +1972,7 @@ html.is-ready .pdf-page-hero {
     height: 760px;
     background:
       linear-gradient(90deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.72) 34%, rgba(0, 0, 0, 0.34) 68%, rgba(0, 0, 0, 0.08) 100%),
-      url("/public/images/hero-photo-new.png") center right / cover no-repeat;
+      url("public/images/hero-photo-new.png") center right / cover no-repeat;
   }
 
   .hero-topbar {
