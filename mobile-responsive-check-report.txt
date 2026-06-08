@@ -1,0 +1,227 @@
+手机端响应式适配检查报告
+
+项目路径：/Users/xq/Desktop/resume-portfolio
+备份路径：/Users/xq/Desktop/resume-portfolio-backup-before-mobile
+本地检查地址：http://127.0.0.1:4180/index.html
+手机模拟尺寸：390 × 844
+
+一、修改文件
+- index.html
+- works.html
+- detail.html
+- styles.css
+- gallery.css
+- mobile-responsive-check-report.txt
+
+二、viewport 检查
+- index.html 已有 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+- works.html 已有 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+- detail.html 已有 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+- 本次未修改页面文字、布局结构、作品数据、图片路径、视频路径和 JS 交互逻辑。
+
+三、本次追加修复的主要 class
+styles.css:
+- #home-hero
+- .pdf-pages
+- .pdf-page
+- .about-html-page
+- .about-left
+- .about-title
+- .about-summary
+- .about-jobs
+- .about-jobs article
+- .about-portfolio-link
+- .selected-html-page
+- .selected-film-card
+- .selected-film-card img
+- .selected-film-copy
+- .home-video-card
+- .home-video-player
+- .categories-html-page
+- .category-card-grid
+- .contact-html-page
+- .contact-glass-card
+
+gallery.css:
+- .gallery-page
+- .gallery-header
+- .gallery-filter
+- .masonry-gallery
+- .masonry-item
+- .detail-page
+- .detail-stage
+- .detail-stage img
+- .detail-video
+- .detail-nav
+- .detail-thumbs
+- .detail-thumb
+
+HTML cache bust:
+- index.html styles.css?v=20
+- works.html styles.css?v=20
+- detail.html styles.css?v=20
+
+四、问题原因
+1. About Me 裁切和内容偏右：
+   390px 下页面最初仍加载旧 CSS，About 区域继续使用桌面端 position:absolute、left:128px、width:520px / 635px、overflow:hidden，导致标题只显示到 About M，正文和工作经历被右侧裁切。
+
+2. 右侧灰色空白和横向溢出风险：
+   部分首页 section 和内部容器仍保留桌面固定宽度、绝对定位和固定高度。已在手机端媒体查询中把主要 section/container 限制为 width:100%、max-width:100%，并把 About 区域的绝对定位重置为相对布局。
+
+3. 第3屏视频只显示一部分：
+   视频卡片在手机端仍受桌面端固定高度和图片高度规则影响，封面没有按手机宽度完整自适应。已在手机端将视频卡片改为自适应高度，封面使用 width:100%、aspect-ratio:16/9、object-fit:contain，并把文案改为卡片内部自然流布局。
+
+4. CSS 不生效原因：
+   本地 4180 曾同时存在两个服务，其中 127.0.0.1 命中过旧目录；同时浏览器也缓存了旧的 styles.css?v=18。已停止旧服务，并把 CSS 版本刷新到 v20，确保 127.0.0.1:4180 加载正式仓库最新 CSS。
+
+五、本地检查结果
+- 390 × 844 index.html：无页面级横向滚动；About Me 英文标题完整；中文“关于我”完整；正文不裁切；Portfolio / 查看作品不溢出；四个经历横条正常显示。
+- 390 × 844 首页第3屏：两个视频入口完整显示；封面使用 object-fit: contain；点击后仍打开原有视频弹窗。
+- 390 × 844 首页视频弹窗：弹窗宽度 358px，video 宽度 356px，object-fit: contain，无横向溢出。
+- 390 × 844 works.html：瀑布流为单列；分类栏横向滚动；无页面级横向滚动。
+- 390 × 844 detail.html video：播放器宽度 366px，object-fit: contain，controls 保留，无横向溢出。
+- 390 × 844 detail.html 图片系列：主图自适应；缩略图栏横向滚动；无横向溢出。
+- 1440px index.html：Hero 高度、About 绝对定位、作品分类三列、视频卡片高度均保持桌面端原样。
+
+六、风险点
+- 移动端分类栏内部横向滚动是预期行为，不是页面横向溢出。
+- 不同手机浏览器地址栏高度不同，Hero 使用 svh 降低高度跳动风险。
+- 本次没有提交、没有推送；需要确认视觉后再提交上线。
+
+七、建议手动检查
+- http://127.0.0.1:4180/index.html
+  检查首页五屏、About Me、视频入口、联系方式弹窗。
+- http://127.0.0.1:4180/works.html
+  检查分类横滑和瀑布流单列。
+- http://127.0.0.1:4180/detail.html?id=mobile-poster-social-project-01&image=0&category=mobile-poster
+  检查多图详情页和缩略图横向滚动。
+- http://127.0.0.1:4180/detail.html?id=video-%E5%87%8C%E6%99%A8%E4%B8%89%E7%82%B9%E7%9A%84%E7%94%B5%E8%AF%9Dep.01&image=0&category=video
+  检查视频详情页播放器。
+
+八、提交状态
+- 本次未执行 git commit。
+- 本次未执行 git push。
+
+九、2026-06-08 追加响应式细节修复
+
+本轮修改文件：
+- index.html
+- works.html
+- detail.html
+- styles.css
+- gallery.css
+- mobile-responsive-check-report.txt
+
+本轮追加修复的主要 class：
+styles.css:
+- #home-hero
+- .hero-copy-block
+- .hero-copy-block h1
+- .about-html-page
+- .about-summary
+- .about-jobs
+- .about-jobs article
+- .selected-html-page
+- .selected-film-card
+- .selected-film-card img
+- .selected-film-copy
+- .categories-html-page
+- .categories-head
+- .category-card-grid
+- .home-video-card
+- .home-video-player
+
+gallery.css:
+- .gallery-page
+- .gallery-header
+- .gallery-filter
+- .masonry-gallery
+- .detail-page
+- .detail-stage
+- .detail-stage img
+- .detail-video
+- .detail-thumbs
+
+HTML cache bust:
+- index.html styles.css?v=21
+- works.html styles.css?v=21 / gallery.css?v=21
+- detail.html styles.css?v=21 / gallery.css?v=21
+
+问题原因与修复方式：
+1. 手机端 About Me 简介末尾孤字断行：
+   390px 下简介容器宽度和 13px 字号组合容易在最后一句产生单字孤行。已在 @media screen and (max-width: 480px) 中把 About 简介左右 padding 微调为 18px、字号降到 12px、line-height 调整为 1.62，并加入 text-wrap: pretty。未修改正文原文。
+
+2. 手机端首屏标题压脸：
+   390px 下背景图仍按较宽屏位置显示，标题安全区和人脸区域靠得太近。已在 max-width: 480px 中单独调整 #home-hero 背景位置为 44% center，并加强左侧黑色渐变；同时将 Graphic / Design 手机端字号控制到 clamp(42px, 13vw, 58px)，让标题停留在左侧负空间。
+
+3. iPad About Me 横向溢出：
+   769px-1180px 中间宽度原先继承桌面端 absolute + 固定 left/width，右侧经历卡片会超出屏幕。已新增 @media screen and (min-width: 769px) and (max-width: 1180px)，将 About 区域改为可控两列 grid，重置 about-left/about-jobs/about-portfolio-link 的绝对定位，并缩小经历卡片 padding、列宽和说明字号。
+
+4. iPad 作品分类区错位和留白：
+   中间宽度下原三列卡片和桌面间距不适合，768px 竖屏又容易变成过长单列。已在 769px-1180px 设置两列分类网格，并在 600px-768px 增加两列覆盖，避免 iPad 竖屏出现大面积单列留白。
+
+5. 视频区域复查：
+   首页第3屏视频入口和弹窗继续沿用原 JS 逻辑，只在响应式 CSS 中限制宽度和 max-height。390px 弹窗 video 为 356px × 200px，object-fit: contain；video 详情页 390px 播放器为 366px × 206px，1024px 播放器为 980px × 551px，均无横向溢出。
+
+本轮检查尺寸：
+- 390 × 844：无页面级横向滚动；About Me 不再裁切；简介结尾不再出现“具。”孤字断行；首屏标题没有明显压脸；视频入口和视频弹窗完整显示。
+- 768 × 1024：无页面级横向滚动；About Me 完整显示；作品分类区为两列；视频区域正常。
+- 1024 × 768：无页面级横向滚动；About Me 两列在屏内；右侧经历卡片完整显示；作品分类区为两列；视频区域正常。
+- 1440 × 900：桌面端 Hero、About 绝对定位、视频卡片、作品分类三列均保持原样。
+
+仍有风险点：
+- iPad 竖屏 768px 当前沿用手机端上下 About 布局，这是为了避免中间宽度临界点挤压；769px 以上进入 tablet 两列布局。
+- 分类栏和详情缩略图栏在移动端/中间宽度存在内部横向滚动，这是预期交互，不是页面横向溢出。
+
+提交状态：
+- 本轮未执行 git commit。
+- 本轮未执行 git push。
+
+十、2026-06-08 最后一轮响应式局部微调
+
+本轮修改文件：
+- index.html
+- works.html
+- detail.html
+- styles.css
+- mobile-responsive-check-report.txt
+
+本轮没有修改：
+- 作品数据、图片路径、视频路径、交互 JS、页面结构、备份文件夹。
+
+1. 手机首屏人物位置微调：
+   修改 class：#home-hero
+   修改位置：@media screen and (max-width: 480px)
+   修复方式：将手机端背景图位置从 44% center 调整为 52% center，使人物脸部比之前更靠左进入画面，但仍保留 Graphic / Design 左侧标题安全区。390 × 844 下确认标题完整，人物没有压住标题。
+
+2. iPad 第4屏作品分类区 3 × 2：
+   修改 class：.category-card-grid
+   修改位置：
+   - @media screen and (min-width: 700px) and (max-width: 768px)
+   - @media screen and (min-width: 769px) and (max-width: 1180px)
+   修复方式：将 iPad 竖屏和横屏的首页第4屏分类入口改为 repeat(3, minmax(0, 1fr))。768 × 1024 下列宽为 226px 左右；1024 × 768 下列宽为 283px 左右，均为 3 列、共 2 行，无横向溢出。
+
+3. iPad 第5屏联系文案缩小并留边距：
+   修改 class：
+   - .contact-html-page
+   - .contact-html-page h2
+   修改位置：@media screen and (min-width: 769px) and (max-width: 1180px)
+   修复方式：给第5屏在 tablet 区间增加左右安全 padding，并将英文联系语设置为 font-size: clamp(38px, 4.3vw, 46px)、max-width: 100%、white-space: normal。1024 × 768 下文案宽度约 816px，左右各留约 104px，不再贴边；桌面 1440px 仍保持原 48px nowrap 效果。
+
+4. CSS 缓存版本：
+   - index.html styles.css?v=23
+   - works.html styles.css?v=23
+   - detail.html styles.css?v=23
+   仅用于确保浏览器加载本轮 CSS，未修改页面结构。
+
+本轮检查尺寸：
+- 390 × 844：首页首屏人物位置已比上一版更靠左，Graphic / Design 完整且不被压；About Me 仍正常；页面无横向滚动。
+- 768 × 1024：首页第4屏分类区为 3 列；第5屏联系区不横向溢出；页面无横向滚动。
+- 1024 × 768：首页第4屏分类区为 3 列；第5屏联系文案缩小并留出左右边距；页面无横向滚动。
+- 1440 × 900：桌面端 Hero、About、分类三列和 Contact 原样保持；页面无横向滚动。
+- works.html 390 / 1024：无横向滚动。
+- detail.html video 390 / 1024：无横向滚动。
+
+提交状态：
+- 本轮未执行 git commit。
+- 本轮未执行 git push。
