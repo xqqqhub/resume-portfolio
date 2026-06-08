@@ -1021,7 +1021,7 @@ video {
 #home-hero {
   background:
     linear-gradient(90deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.72) 34%, rgba(0, 0, 0, 0.34) 68%, rgba(0, 0, 0, 0.08) 100%),
-    url("public/images/hero-photo-new.png") center right / cover no-repeat;
+    url("public/optimized/hero-photo-new.jpg") center right / cover no-repeat;
 }
 
 .pdf-page-hero::after {
@@ -1972,7 +1972,7 @@ html.is-ready .pdf-page-hero {
     height: 760px;
     background:
       linear-gradient(90deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.72) 34%, rgba(0, 0, 0, 0.34) 68%, rgba(0, 0, 0, 0.08) 100%),
-      url("public/images/hero-photo-new.png") center right / cover no-repeat;
+      url("public/optimized/hero-photo-new.jpg") center right / cover no-repeat;
   }
 
   .hero-topbar {
@@ -3059,7 +3059,7 @@ html.is-ready .pdf-page-hero {
   #home-hero {
     background:
       linear-gradient(90deg, rgba(0, 0, 0, 0.96) 0%, rgba(0, 0, 0, 0.86) 46%, rgba(0, 0, 0, 0.48) 74%, rgba(0, 0, 0, 0.16) 100%),
-      url("public/images/hero-photo-new.png") 52% center / cover no-repeat;
+      url("public/optimized/hero-photo-new.jpg") 52% center / cover no-repeat;
   }
 
   .hero-copy-block {
@@ -3103,7 +3103,7 @@ html.is-ready .pdf-page-hero {
     height: min(100svh, 820px);
     background:
       linear-gradient(90deg, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.74) 39%, rgba(0, 0, 0, 0.34) 70%, rgba(0, 0, 0, 0.1) 100%),
-      url("public/images/hero-photo-new.png") 48% center / cover no-repeat;
+      url("public/optimized/hero-photo-new.jpg") 48% center / cover no-repeat;
   }
 
   .hero-copy-block {

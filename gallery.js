@@ -15,6 +15,7 @@
   };
   const getActiveCategory = () => normalizeCategory(params.get("category"));
   const getOrder = (work) => (Number.isFinite(work.order) ? work.order : 0);
+  const getThumbSrc = (work) => `assets/portfolio-thumbs/${encodeURIComponent(work.id).replace(/%/g, "_")}.jpg?v=3`;
   const sortForGallery = (works) =>
     works
       .map((work, index) => ({ work, index }))
@@ -56,7 +57,7 @@
             const categoryParam = categoryId !== "all" ? `&category=${encodeURIComponent(categoryId)}` : "";
             return `
             <a class="masonry-item" href="detail.html?id=${encodeURIComponent(work.id)}&image=${imageIndex}${categoryParam}" aria-label="查看作品">
-              <img src="${work.cover}" alt="" loading="lazy">
+              <img src="${getThumbSrc(work)}" alt="" loading="lazy" decoding="async">
             </a>`;
           })
           .join("");
@@ -113,7 +114,7 @@
 
     if (isVideo) {
       stage.innerHTML = work.videoSrc
-        ? `<video class="detail-video" src="${work.videoSrc}" poster="${work.cover}" controls playsinline preload="metadata">当前浏览器无法播放此视频。</video>`
+        ? `<video class="detail-video" src="${work.videoSrc}" poster="${getThumbSrc(work)}" controls playsinline preload="metadata">当前浏览器无法播放此视频。</video>`
         : `<p class="detail-empty">视频文件暂未找到。</p>`;
       prev.disabled = true;
       next.disabled = true;
@@ -138,6 +139,7 @@
         stage.innerHTML = `<img alt="" data-detail-image />`;
         image = qs("[data-detail-image]", stage);
       }
+      image.decoding = "async";
       image.src = work.images[current];
       prev.disabled = !isSeries || current === 0;
       next.disabled = !isSeries || current === work.images.length - 1;
@@ -158,7 +160,7 @@
             (src, index) => `
             <button class="detail-thumb" type="button" data-thumb-index="${index}" aria-label="查看第 ${index + 1} 张">
               <span>${index + 1}</span>
-              <img src="${src}" alt="" loading="lazy">
+              <img src="${src}" alt="" loading="lazy" decoding="async">
             </button>`
           )
           .join("")

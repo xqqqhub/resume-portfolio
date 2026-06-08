@@ -1,0 +1,255 @@
+Performance Check Report
+
+Project: /Users/xq/Desktop/resume-portfolio
+Backup: /Users/xq/Desktop/resume-portfolio-backup-before-performance
+Generated: 2026-06-08T10:55:21.019Z
+
+1. Backup
+- Backup folder exists and was not modified by this report step.
+
+2. Resource size summary
+- Before backup images: 696138KB (679.8MB)
+- Before backup videos: 57934KB (56.6MB)
+- Current images including preserved originals + optimized derivatives: 705715KB (689.2MB)
+- Current videos: 57934KB (56.6MB)
+- Added optimized derivative folders size: 9577KB (9.4MB)
+- Runtime gallery cover transfer estimate: 199953KB -> 9214KB, saved about 190739KB (186.3MB)
+  Note: repository size increased slightly because original assets were preserved as requested; runtime list-page image transfer is reduced because covers now use thumbnails.
+
+3. Largest 30 current media files
+- 16733KB	assets/portfolio/00_重点作品_Important/04_折页_生活图册_三折_反面展开图.png
+- 16733KB	assets/portfolio/04_折页_Brochure/04_折页_生活图册_三折_反面展开图.png
+- 15725KB	assets/portfolio/00_重点作品_Important/06_横版短片_凌晨三点的电话EP.01_成片.mp4
+- 15725KB	assets/portfolio/06_横版短片_Video/06_横版短片_凌晨三点的电话EP.01_成片.mp4
+- 13242KB	assets/portfolio/00_重点作品_Important/06_横版短片_凌晨三点的电话EP.02_成片.mp4
+- 13242KB	assets/portfolio/06_横版短片_Video/06_横版短片_凌晨三点的电话EP.02_成片.mp4
+- 11240KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_价值稿_02.jpg
+- 11108KB	assets/portfolio/00_重点作品_Important/02_手机刷屏海报_集团品宣_02.jpg
+- 11108KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_集团品宣_02.jpg
+- 10667KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_价值稿_03.jpg
+- 9644KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_排版_06.jpg
+- 9626KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_倒计时_02.jpg
+- 9594KB	assets/portfolio/01_主画面_KeyVisual/01_主画面_快哉画展_01.jpg
+- 9518KB	assets/portfolio/00_重点作品_Important/02_手机刷屏海报_集团品宣_01.jpg
+- 9518KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_集团品宣_01.jpg
+- 8912KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_倒计时_03.jpg
+- 8766KB	assets/portfolio/00_重点作品_Important/02_手机刷屏海报_集团品宣_03.jpg
+- 8766KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_集团品宣_03.jpg
+- 8228KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_交房稿_02.jpg
+- 8106KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_倒计时_01.jpg
+- 7936KB	assets/portfolio/03_小红书海报_RednotePoster/03_小红书海报_景观_封面.jpg
+- 7880KB	assets/portfolio/00_重点作品_Important/02_手机刷屏海报_集团品宣_04.jpg
+- 7880KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_集团品宣_04.jpg
+- 7859KB	assets/portfolio/01_主画面_KeyVisual/01_主画面_展厅开放活动_01.jpg
+- 7853KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_交房稿_01.jpg
+- 7822KB	assets/portfolio/01_主画面_KeyVisual/01_主画面_莲动画展_01.jpg
+- 7785KB	assets/portfolio/00_重点作品_Important/04_折页_生活图册_三折_正面展开图.png
+- 7785KB	assets/portfolio/04_折页_Brochure/04_折页_生活图册_三折_正面展开图.png
+- 7733KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页05.jpg
+- 7733KB	assets/portfolio/vi/05.jpg
+
+4. Images over 1MB (165)
+- 16733KB	assets/portfolio/00_重点作品_Important/04_折页_生活图册_三折_反面展开图.png
+- 16733KB	assets/portfolio/04_折页_Brochure/04_折页_生活图册_三折_反面展开图.png
+- 11240KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_价值稿_02.jpg
+- 11108KB	assets/portfolio/00_重点作品_Important/02_手机刷屏海报_集团品宣_02.jpg
+- 11108KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_集团品宣_02.jpg
+- 10667KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_价值稿_03.jpg
+- 9644KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_排版_06.jpg
+- 9626KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_倒计时_02.jpg
+- 9594KB	assets/portfolio/01_主画面_KeyVisual/01_主画面_快哉画展_01.jpg
+- 9518KB	assets/portfolio/00_重点作品_Important/02_手机刷屏海报_集团品宣_01.jpg
+- 9518KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_集团品宣_01.jpg
+- 8912KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_倒计时_03.jpg
+- 8766KB	assets/portfolio/00_重点作品_Important/02_手机刷屏海报_集团品宣_03.jpg
+- 8766KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_集团品宣_03.jpg
+- 8228KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_交房稿_02.jpg
+- 8106KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_倒计时_01.jpg
+- 7936KB	assets/portfolio/03_小红书海报_RednotePoster/03_小红书海报_景观_封面.jpg
+- 7880KB	assets/portfolio/00_重点作品_Important/02_手机刷屏海报_集团品宣_04.jpg
+- 7880KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_集团品宣_04.jpg
+- 7859KB	assets/portfolio/01_主画面_KeyVisual/01_主画面_展厅开放活动_01.jpg
+- 7853KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_交房稿_01.jpg
+- 7822KB	assets/portfolio/01_主画面_KeyVisual/01_主画面_莲动画展_01.jpg
+- 7785KB	assets/portfolio/00_重点作品_Important/04_折页_生活图册_三折_正面展开图.png
+- 7785KB	assets/portfolio/04_折页_Brochure/04_折页_生活图册_三折_正面展开图.png
+- 7733KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页05.jpg
+- 7733KB	assets/portfolio/vi/05.jpg
+- 6966KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_节日_01.jpg
+- 6625KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_价值稿_01.jpg
+- 6529KB	assets/portfolio/01_主画面_KeyVisual/01_主画面_读书会活动_01.jpg
+- 6237KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_贺新春2_02.jpg
+- 6078KB	assets/portfolio/04_折页_Brochure/04_折页_华亭_三折_反面展开图.jpg
+- 5852KB	assets/portfolio/04_折页_Brochure/04_折页_办伴_对折_反面展开图.jpg
+- 5745KB	assets/portfolio/00_重点作品_Important/03_小红书海报_获奖_内页03.jpg
+- 5745KB	assets/portfolio/03_小红书海报_RednotePoster/03_小红书海报_获奖_内页03.jpg
+- 5488KB	assets/portfolio/00_重点作品_Important/03_小红书海报_获奖_内页02.jpg
+- 5488KB	assets/portfolio/03_小红书海报_RednotePoster/03_小红书海报_获奖_内页02.jpg
+- 5344KB	assets/portfolio/04_折页_Brochure/04_折页_办伴_对折_正面展开图.jpg
+- 5216KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页19.jpg
+- 5153KB	assets/portfolio/00_重点作品_Important/03_小红书海报_获奖_内页01.jpg
+- 5153KB	assets/portfolio/03_小红书海报_RednotePoster/03_小红书海报_获奖_内页01.jpg
+- 5088KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_贺新春2_01.jpg
+- 5054KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页06.jpg
+- 5054KB	assets/portfolio/vi/06.jpg
+- 4912KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_节气_05.jpg
+- 4778KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_倒计时2_02.jpg
+- 4611KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_排版_02.jpg
+- 4609KB	assets/portfolio/04_折页_Brochure/04_折页_绿地_四折_反面展开图.jpg
+- 4559KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_节日_02.jpg
+- 4403KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_排版_03.jpg
+- 4391KB	assets/portfolio/00_重点作品_Important/03_小红书海报_获奖_封面.jpg
+- 4391KB	assets/portfolio/03_小红书海报_RednotePoster/03_小红书海报_获奖_封面.jpg
+- 4332KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页20.jpg
+- 4306KB	assets/portfolio/01_主画面_KeyVisual/01_主画面_灯箱_01.jpg
+- 4279KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_画展倒计时_02.jpg
+- 4227KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_贺新春2_03.jpg
+- 4197KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_倒计时2_03.jpg
+- 3935KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_倒计时2_01.jpg
+- 3852KB	assets/portfolio/selected-film-02.png
+- 3645KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_排版_05.jpg
+- 3628KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_节气_06.jpg
+- 3540KB	assets/portfolio/03_小红书海报_RednotePoster/03_小红书海报_细节_内页03.jpg
+- 3508KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_节气_03.jpg
+- 3389KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页24.jpg
+- 3371KB	assets/portfolio/03_小红书海报_RednotePoster/03_小红书海报_大奖_内页01.jpg
+- 3351KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_画展倒计时_01.jpg
+- 3193KB	assets/portfolio/03_小红书海报_RednotePoster/03_小红书海报_大奖_内页03.jpg
+- 3187KB	assets/portfolio/04_折页_Brochure/04_折页_华亭_三折_正面展开图.jpg
+- 3187KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页_18.jpg
+- 3150KB	assets/portfolio/03_小红书海报_RednotePoster/03_小红书海报_大奖_内页02.jpg
+- 3139KB	assets/portfolio/00_重点作品_Important/02_手机刷屏海报_贺新春_03.jpg
+- 3139KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_贺新春_03.jpg
+- 3117KB	assets/portfolio/03_小红书海报_RednotePoster/03_小红书海报_细节_封面.jpg
+- 3052KB	public/works-web/social-poster/project-03/04.jpg
+- 2950KB	public/works-web/social-poster/project-03/03.jpg
+- 2934KB	public/works-web/social-poster/project-03/01.jpg
+- 2799KB	assets/portfolio/00_重点作品_Important/03_小红书海报_新天地_内页02.png
+- 2799KB	assets/portfolio/03_小红书海报_RednotePoster/03_小红书海报_新天地_内页02.png
+- 2766KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_主画面延展_01.jpg
+- 2762KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_主画面延展_03.jpg
+- 2741KB	assets/portfolio/00_重点作品_Important/03_小红书海报_新天地_封面.png
+- 2741KB	assets/portfolio/03_小红书海报_RednotePoster/03_小红书海报_新天地_封面.png
+- 2714KB	assets/portfolio/03_小红书海报_RednotePoster/03_小红书海报_直播_封面.jpg
+- 2710KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页29.jpg
+- 2706KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_节气_02.jpg
+- 2704KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_主画面延展_02.jpg
+- 2703KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_节日_03.jpg
+- 2653KB	public/works-web/social-poster/project-03/02.jpg
+- 2565KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页22.jpg
+- 2564KB	assets/portfolio/04_折页_Brochure/04_折页_绿地_四折_正面展开图.jpg
+- 2542KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页21.jpg
+- 2526KB	assets/portfolio/03_小红书海报_RednotePoster/03_小红书海报_细节_内页02.jpg
+- 2465KB	assets/portfolio/00_重点作品_Important/02_手机刷屏海报_贺新春_01.jpg
+- 2465KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_贺新春_01.jpg
+- 2434KB	assets/portfolio/00_重点作品_Important/02_手机刷屏海报_贺新春_04.jpg
+- 2434KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_贺新春_04.jpg
+- 2411KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页10.jpg
+- 2396KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_节气_01.jpg
+- 2380KB	assets/portfolio/03_小红书海报_RednotePoster/03_小红书海报_AI画面_封面.jpg
+- 2374KB	assets/portfolio/00_重点作品_Important/03_小红书海报_新天地_内页01.png
+- 2374KB	assets/portfolio/03_小红书海报_RednotePoster/03_小红书海报_新天地_内页01.png
+- 2340KB	assets/portfolio/selected-film-01.png
+- 2320KB	assets/portfolio/03_小红书海报_RednotePoster/03_小红书海报_大奖_封面.jpg
+- 2313KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页17.jpg
+- 2288KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页11.jpg
+- 2231KB	assets/portfolio/00_重点作品_Important/01_主画面_价值点系列稿_02.jpg
+- 2231KB	assets/portfolio/01_主画面_KeyVisual/01_主画面_价值点系列稿_02.jpg
+- 2222KB	assets/portfolio/00_重点作品_Important/01_主画面_价值点系列稿_03.jpg
+- 2222KB	assets/portfolio/01_主画面_KeyVisual/01_主画面_价值点系列稿_03.jpg
+- 2221KB	assets/portfolio/00_重点作品_Important/01_主画面_价值点系列稿_01.jpg
+- 2221KB	assets/portfolio/01_主画面_KeyVisual/01_主画面_价值点系列稿_01.jpg
+- 2182KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_画展邀请函_01.jpg
+- 2139KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页09.jpg
+- 2099KB	assets/portfolio/03_小红书海报_RednotePoster/03_小红书海报_细节_内页01.jpg
+- 2066KB	assets/portfolio/03_小红书海报_RednotePoster/03_小红书海报_one_内页01.jpg
+- 2002KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页26.jpg
+- 1998KB	public/works-web/social-poster/project-01/03.jpg
+- 1975KB	assets/portfolio/01_主画面_KeyVisual/01_主画面_双十一活动_01.jpg
+- 1938KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页07.jpg
+- 1913KB	public/works-web/social-poster/single-01.jpg
+- 1904KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页27.jpg
+- 1890KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页15.jpg
+- 1858KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页13.jpg
+- 1838KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页25.jpg
+- 1833KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_排版_04.jpg
+- 1830KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页08.jpg
+- 1822KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页03.jpg
+- 1822KB	assets/portfolio/vi/03.jpg
+- 1813KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页16.jpg
+- 1780KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页_14.jpg
+- 1778KB	public/works-web/rednote/project-03/02.JPG
+- 1778KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_节气_04.jpg
+- 1778KB	assets/portfolio/07_页面_Page/07_页面_交互02.JPG
+- 1771KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页12.jpg
+- 1754KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页28.jpg
+- 1727KB	assets/portfolio/03_小红书海报_RednotePoster/03_小红书海报_one_内页02.jpg
+- 1713KB	public/works-web/rednote/project-03/01.JPG
+- 1713KB	assets/portfolio/07_页面_Page/07_页面_交互01.JPG
+- 1677KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页23.jpg
+- 1641KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_节日_06.png
+- 1640KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页04.jpg
+- 1640KB	assets/portfolio/vi/04.jpg
+- 1593KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_排版_07.jpg
+- 1559KB	assets/portfolio/01_主画面_KeyVisual/01_主画面_文化节活动_01.jpg
+- 1548KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_节日_04.jpg
+- 1515KB	assets/portfolio/08_VI_LOGO/08_VI_封面_内页02.jpg
+- 1515KB	assets/portfolio/vi/02.jpg
+- 1510KB	assets/portfolio/08_VI_LOGO/08_VI_封面.jpg
+- 1510KB	assets/portfolio/vi/01.jpg
+- 1442KB	assets/portfolio/03_小红书海报_RednotePoster/03_小红书海报_景观_内页01.jpg
+- 1341KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_排版_01.jpg
+- 1288KB	assets/portfolio/01_主画面_KeyVisual/01_主画面_项目案名发布会_01.jpg
+- 1270KB	assets/portfolio/00_重点作品_Important/03_小红书海报_新天地_内页03.png
+- 1270KB	assets/portfolio/03_小红书海报_RednotePoster/03_小红书海报_新天地_内页03.png
+- 1238KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_节日_07.jpg
+- 1232KB	assets/portfolio/03_小红书海报_RednotePoster/03_小红书海报_one_内页03.jpg
+- 1209KB	assets/portfolio/05_册子PPT_BookletDeck/05_册子PPT_拍卖_内页12.jpg
+- 1181KB	assets/portfolio/05_册子PPT_BookletDeck/05_册子PPT_拍卖_内页02.jpg
+- 1153KB	public/works-web/rednote/project-02/02.jpg
+- 1151KB	public/works-web/social-poster/project-01/01.jpg
+- 1148KB	assets/portfolio/05_册子PPT_BookletDeck/05_册子PPT_拍卖_内页16.jpg
+- 1122KB	public/works-web/social-poster/project-01/02.jpg
+- 1081KB	assets/portfolio/05_册子PPT_BookletDeck/05_册子PPT_拍卖_内页17.jpg
+- 1078KB	assets/portfolio/02_手机刷屏海报_MobilePoster/02_手机刷屏海报_节日_05.jpg
+- 1070KB	assets/portfolio/05_册子PPT_BookletDeck/05_册子PPT_拍卖_内页03.jpg
+- 1030KB	assets/portfolio/03_小红书海报_RednotePoster/03_小红书海报_室内展示_内页04.jpg
+
+5. Videos over 10MB (4)
+- 15725KB	assets/portfolio/00_重点作品_Important/06_横版短片_凌晨三点的电话EP.01_成片.mp4
+- 15725KB	assets/portfolio/06_横版短片_Video/06_横版短片_凌晨三点的电话EP.01_成片.mp4
+- 13242KB	assets/portfolio/00_重点作品_Important/06_横版短片_凌晨三点的电话EP.02_成片.mp4
+- 13242KB	assets/portfolio/06_横版短片_Video/06_横版短片_凌晨三点的电话EP.02_成片.mp4
+
+6. Key optimized files
+- Hero background: public/images/hero-photo-new.png 436KB -> public/optimized/hero-photo-new.jpg 93KB, saved 343KB
+- Home video EP01 poster: assets/portfolio/selected-film-01.png 2340KB -> assets/portfolio-thumbs/home-video-01.jpg 119KB, saved 2221KB
+- Home video EP02 poster: assets/portfolio/selected-film-02.png 3852KB -> assets/portfolio-thumbs/home-video-02.jpg 151KB, saved 3701KB
+- Gallery cover thumbs: 62 works use assets/portfolio-thumbs/<encoded-id>.jpg?v=3 in works.html via gallery.js.
+
+7. Code changes
+- styles.css: hero background now uses public/optimized/hero-photo-new.jpg while preserving existing positioning/gradients.
+- index.html: selected film posters use assets/portfolio-thumbs/home-video-01.jpg and home-video-02.jpg; non-first-screen images use loading="lazy" decoding="async"; styles cache version v=24.
+- gallery.js: masonry grid uses generated thumbnail paths; detail images retain original high-res paths; detail thumbnails use loading="lazy" decoding="async"; video detail poster uses generated thumbnail; video preload remains metadata.
+- works.html/detail.html: gallery.js cache version v=25; styles/gallery cache v=24.
+
+8. Video loading
+- Home video modal video tag keeps preload="metadata" and has no src until a user clicks a video card.
+- Detail video tag keeps controls playsinline preload="metadata" and uses mp4, not mov.
+- No video content was re-encoded or replaced.
+
+9. Path safety
+- Resource paths remain relative for GitHub Pages: public/... and assets/...
+- Scan found no 127.0.0.1, localhost, file://, /Users/xq, /public/, or /assets/ in html/css/js.
+
+10. Local verification
+- http://127.0.0.1:4180/index.html?v=24: checked at 390px; no horizontal overflow; optimized hero and selected film posters load; video modal opens and plays mp4.
+- http://127.0.0.1:4180/works.html?v=24: checked at 390px; masonry images use assets/portfolio-thumbs; no console errors; no horizontal overflow.
+- detail image page: high-res detail image still loads; thumbnails lazy/async; no console errors; no horizontal overflow.
+- detail video page: mp4 loads with controls; optimized poster path is used; no horizontal overflow.
+- Tablet 1024px index: category grid remains 3 columns; no horizontal overflow.
+
+11. Deployment status
+- Not committed.
+- Not pushed.
+- Original source images/videos were not deleted.
